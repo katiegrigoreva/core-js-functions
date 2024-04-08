@@ -183,7 +183,7 @@ function retry(func, attempts) {
  */
 function logger(func, logFunc) {
   const fnName = func.name;
-  return function (...args) {
+  return (...args) => {
     let res;
     const arr = [];
     args.forEach((arg) => {
